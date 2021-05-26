@@ -24,7 +24,7 @@ class BillStoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'client', => 'required',
+            'client' => 'required',
             'phone' => 'required',
             'email' => 'required',
         ];
