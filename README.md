@@ -97,6 +97,8 @@ docker run --name mysql -p 4306:3306 -e MYSQL_USER=admin -e MYSQL_PASSWORD=12345
 
 Adicionamente se adjunta dentro de el proyecto el dump  de la base de datos, con datos de prueba generados para las pruebas.
 
+_ _ _
+
 ## Respuesta preguntas parte 2.
 
 - ### Si se requiere manejar inventario en el ejemplo anterior, explique como lo haría:
