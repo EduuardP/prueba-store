@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BillController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -19,4 +20,5 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
- Route::resource('product', ProductController::class);
+ Route::resource('products', ProductController::class);
+ Route::resource('bills', BillController::class);
