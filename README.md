@@ -7,15 +7,15 @@ Para la realización de esta prueba se definieron 3 tablas:
 En esta tabla se encuentran los productos existentes dentro de la tienda, y donde se agregarán los nuevos productos. La estructura es la siguente
 
 Columns:
-`
-    > id -> int UN AI PK 
-    > SKU -> varchar(255) 
-    > name -> varchar(255) 
-    > description -> varchar(255) -> La descripción es opcional
-    > photo -> text  -> se debe guardar una imagen en base 64
-    > price -> double(8,2)   -> indica el total del producto incluido el iva
-    > iva -> enum('0','10','19')
-`
+~~~
+     id -> int UN AI PK 
+     SKU -> varchar(255) 
+     name -> varchar(255) 
+     description -> varchar(255) -> La descripción es opcional
+     photo -> text  -> se debe guardar una imagen en base 64
+     price -> double(8,2)   -> indica el total del producto incluido el iva
+     iva -> enum('0','10','19')
+~~~
 
 
 
@@ -24,7 +24,8 @@ Columns:
 
 Columns:
 
-> id -> int UN AI PK 
+~~~
+ id -> int UN AI PK 
 client -> varchar(255) 
 phone -> varchar(255) 
 email -> varchar(255) 
@@ -33,6 +34,8 @@ IVA -> double(8,2)
 total -> double(8,2) 
 created_at -> timestamp 
 updated_at -> timestamp
+~~~
+
 
 - #### bill_product:
  En esta tabla se relacionan los productos que contiene cada factura generada con su respectiva cantidad. Se presenta la estructura
