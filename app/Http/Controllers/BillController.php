@@ -44,8 +44,9 @@ class BillController extends Controller
         $data = $request->validated();
         $products = $data['products'];
         $result = $this->generateTotalIva($products);
-        if($error = $result["error"]){
-            return response($error,400);
+        if(array_key_exists("error",$result))
+        {
+            return response($result["error"],400);
         }
        $bill = Bill::create( [
             'client'=> $data['client'],
