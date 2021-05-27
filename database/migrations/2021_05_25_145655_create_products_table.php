@@ -19,9 +19,9 @@ class CreateProductsTable extends Migration
             $table->string("SKU")->unique();
             $table->string("name");
             $table->string("description")->nullable();
-            $table->string("photo");
+            $table->text("photo");
             $table->float("price");
-            $table->enum("iva",[0,10,19]);
+            $table->enum("iva",[intval(0),intval(10),intval(19)]);
             $table->timestamps();
         });
     }
