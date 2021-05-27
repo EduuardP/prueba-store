@@ -69,10 +69,18 @@ class BillController extends Controller
      * @param  \App\Models\bill  $bill
      * @return \Illuminate\Http\Response
      */
-    public function show(bill $bill)
+    public function show($id)
     {
         //
-        return response("",405);
+        
+        $bill = Bill::with('products')->find($id);
+        if ($bill){
+            
+            return response($bill,200);
+        }else{
+            return response("No existe ninguna factura con el id mencionado",400);
+        }
+       
     }
 
     /**
