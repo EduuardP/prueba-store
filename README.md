@@ -92,7 +92,7 @@ Dentro del proyecto se adjunta la colección de postman de ejemplo para guardar 
 PAra el proyecto se utilizó una base de datos mysql, se adjunta el script de docker para generar una base de datos rapidamente, con la configuración necesaria para funcionar sobre el proyecto:
 
 ```sh
-docker run --name mysql -p 4306:3306 -e MYSQL_USER=admin -e MYSQL_PASSWORD=123456789 -e MYSQL_RANDOM_ROOT_PASSWORD=yes -e MYSQL_DATABASE=productstore -d mysql 
+docker run --name mysql -p 4306:3306 -e MYSQL_USER=admin -e MYSQL_PASSWORD=123456789 -e MYSQL_ROOT_PASSWORD=admin1234 -e MYSQL_DATABASE=productstore -d mysql 
 ```
 
 Adicionamente se adjunta dentro de el proyecto el dump  de la base de datos, con datos de prueba generados para las pruebas.
