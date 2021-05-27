@@ -95,7 +95,7 @@ PAra el proyecto se utilizó una base de datos mysql, se adjunta el script de do
 docker run --name mysql -p 4306:3306 -e MYSQL_USER=admin -e MYSQL_PASSWORD=123456789 -e MYSQL_ROOT_PASSWORD=admin1234 -e MYSQL_DATABASE=productstore -d mysql 
 ```
 
-Adicionamente se adjunta dentro de el proyecto el dump  de la base de datos, con datos de prueba generados para las pruebas.
+Adicionamente se adjunta dentro de el proyecto el dump  de la base de datos, con datos de prueba generados para las pruebas en la carpeta DumpDB.
 
 _ _ _
 
