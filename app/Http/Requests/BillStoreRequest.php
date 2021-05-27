@@ -26,7 +26,7 @@ class BillStoreRequest extends FormRequest
         return [
             'client' => 'required',
             'phone' => 'required',
-            'email' => 'required',
+            'email' => 'required|email',
             'products' => 'required|array'
         ];
     }
@@ -34,7 +34,8 @@ class BillStoreRequest extends FormRequest
     public function messages()
     {
         return [
-            'required' => 'El valor de :attribute es requerido'
+            'required' => 'El valor de :attribute es requerido',
+            'email' => 'debe agregar un correo electronico valido'
             
         ];
     }
