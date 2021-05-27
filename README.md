@@ -7,13 +7,15 @@ Para la realización de esta prueba se definieron 3 tablas:
 En esta tabla se encuentran los productos existentes dentro de la tienda, y donde se agregarán los nuevos productos. La estructura es la siguente
 
 Columns:
-> id -> int UN AI PK 
-> SKU -> varchar(255) 
-> name -> varchar(255) 
-> description -> varchar(255) -> La descripción es opcional
-> photo -> text  -> se debe guardar una imagen en base 64
-> price -> double(8,2)   -> indica el total del producto incluido el iva
-> iva -> enum('0','10','19')
+`
+    > id -> int UN AI PK 
+    > SKU -> varchar(255) 
+    > name -> varchar(255) 
+    > description -> varchar(255) -> La descripción es opcional
+    > photo -> text  -> se debe guardar una imagen en base 64
+    > price -> double(8,2)   -> indica el total del producto incluido el iva
+    > iva -> enum('0','10','19')
+`
 
 
 
