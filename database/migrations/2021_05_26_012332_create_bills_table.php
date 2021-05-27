@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 class CreateBillsTable extends Migration
@@ -15,9 +16,7 @@ class CreateBillsTable extends Migration
     {
         Schema::create('bills', function (Blueprint $table) {
             $table->increments('id');
-
             //Numero de factura, Cliente, teléfono, email
-            $table->uuid('numBil');
             $table->string('client');
             $table->string('phone');
             $table->string('email');
