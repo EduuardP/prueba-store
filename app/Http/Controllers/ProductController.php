@@ -51,10 +51,15 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product)
+    public function show($id)
     {
         //
-        return response("",405);
+        $product = Product::find($id);
+        if ($product){
+            return response($product,200);
+        }else{
+            return response("No existe ningun producto con el id: ".$id,400);
+        }
     }
 
     /**
